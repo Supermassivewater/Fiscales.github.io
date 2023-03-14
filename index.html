@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Actividad clase</title>
+</head>
+<body>
+    <header>
+		<h1>¡Javascript!</h1>
+
+        <div id="tema">
+            <div class="capas" id="capa1" title="dark" onclick="dark()"></div>
+            <div class="capas" id="capa2" title="light"></div>
+            <div class="capas" id="capa3"></div>
+        </div>
+	</header>
+   
+    <section>
+    <fieldset class="secciones" >
+        <legend>Datos receptor</legend> 
+        <div class="uno">
+        <input type="text" id="" placeholder="Razón social" >
+        <input type="text" id="" placeholder="RFC"> <br>
+        <p id="titulob">No. de conceptos</p> <input type="number" placeholder="0" name="" id="n-conceptos" max="10" min="0"><br>
+        <input type="submit" id="generar" value="Generar">
+        </div>
+    </fieldset>
+    <fieldset id="cuerpo" class="secciones">
+        <legend >Conceptos</legend>
+        <div id="conceptos" >
+        
+        </div>
+        <input id="addconcepto" class="conceptoadd" type="submit" value="Agregar Concepto">
+        
+    </fieldset>
+    
+    <fieldset class="secciones ultimo">
+        Sutotal: <p  id="subtotal" class="p">0.00</p> <br>
+        Iva: <p id="iva" class="p">0.00</p><br>
+        Total: <p id="total" class="p">0.00</p>
+    </fieldset>
+
+</section>
+
+<footer>EVN503</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
